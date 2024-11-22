@@ -7,7 +7,6 @@ import logo_light_mode from "../assets/images/light_logo.jpg";
 import logo_dark_mode from "../assets/images/dark_logo.png";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { FaCirclePlay } from "react-icons/fa6";
-
 import { HiMenuAlt2, HiMenuAlt3 } from "react-icons/hi";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
@@ -16,7 +15,7 @@ const NavLinks = [
   {
     id: 2,
     name: "دۆکیۆمێنتارییەکان",
-    link: "/documentaries",
+    link: "/DocumenterisFilter",
     submenu: [
       { id: 1, name: "ژیانی دەریاییەکان", imgSrc: SeaAnimals, link: "#" },
       { id: 2, name: "ژیانی ئاژەڵە کێوییەکان", imgSrc: Image2, link: "#" },
@@ -37,7 +36,6 @@ const NavLinks = [
       { id: 10, name: "ژیانی ئاژەڵە کێوییەکان", imgSrc: Image2, link: "#" },
     ],
   },
-  { id: 4, name: "‌‌ هەواڵەکان", link: "/translators" },
   { id: 5, name: "وەرگێڕەکان", link: "/translators" },
 ];
 
@@ -66,7 +64,7 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
           <nav className="hidden md:block">
             <ul className={`flex justify-between items-center gap-8`}>
               {NavLinks.map(({ id, name, link, submenu }) => (
-                <li key={id} className=" group py-4 flex">
+                <li key={id} className=" group font-medium py-4 flex">
                   <div className="flex justify-aroud items-center ">
                     <Link
                       to={link}

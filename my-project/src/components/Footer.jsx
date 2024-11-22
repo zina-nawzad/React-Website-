@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const Footer = () => {
+const Footer = ({ isDarkMode }) => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div
+      className={`${
+        isDarkMode
+          ? "bg-dark-primary text-dark-secondary"
+          : "bg-light-primary text-light-secondary"
+      }`}
+    >
+      <div className="flex">
+          <h1>Footer</h1>
+        </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

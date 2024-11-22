@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 import video1 from "../assets/images/Video1.mp4";
 import video3 from "../assets/images/Video3.mp4";
 import video4 from "../assets/images/Video4.mp4";
@@ -68,7 +67,7 @@ const Hero = ({ isDarkMode, toggleTheme }) => {
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="absolute top-32 2xl:top-48 xl:top-44 lg:top-44 w-full lg:w-3/4 h-full flex items-center text-center lg:text-start z-10 px-16 ">
+          <div className="absolute top-32 2xl:top-48 xl:top-44 lg:top-44 w-full lg:w-3/4 h-full flex items-center text-center lg:text-start z-10 px-8 ">
             <div className="text-white w-full pb-4 text-center lg:text-start">
               <h1 className="lg:text-2xl xl:text-3xl text-xl font-bold mb-6">
                 {title}
@@ -99,7 +98,7 @@ const Hero = ({ isDarkMode, toggleTheme }) => {
       ))}
 
       {/* Left and Right Navigation Buttons */}
-      <div className="hidden lg:block absolute top-1/2 left-16 transform -translate-y-1/2 z-20">
+      <div className="hidden lg:block absolute top-1/2 left-8 transform -translate-y-1/2 z-20">
         <button
           onClick={prevVideo}
           className={`xl:p-3 p-2 xl:text-xl rounded-full ${
@@ -116,7 +115,7 @@ const Hero = ({ isDarkMode, toggleTheme }) => {
           <FaChevronLeft />
         </button>
       </div>
-      <div className="hidden lg:block absolute top-1/2 right-16 transform -translate-y-1/2 z-20">
+      <div className="hidden lg:block absolute top-1/2 right-8 transform -translate-y-1/2 z-20">
         <button
           onClick={nextVideo}
           className={`xl:p-3 p-2 xl:text-xl  rounded-full ${

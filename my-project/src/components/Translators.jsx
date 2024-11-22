@@ -47,10 +47,10 @@ const translatorsList = [
   },
 ];
 
-const Translators = ({ isDarkMode, toggleTheme }) => {
+const Translators = ({ isDarkMode }) => {
   return (
     <section
-      className={`flex flex-col justify-around items-start px-8 ${
+      className={`flex flex-col justify-around items-start px-2 md:px-8  ${
         isDarkMode ? "bg-dark-primary" : "bg-light-primary"
       }`}
     >
@@ -66,7 +66,7 @@ const Translators = ({ isDarkMode, toggleTheme }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 2xl:grid-cols-5 w-full mb-24 mt-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 2xl:grid-cols-5 w-full mb-24">
         {translatorsList.map(({ id, name, title, img, number, link }) => (
           <div
             key={id}
@@ -89,9 +89,9 @@ const Translators = ({ isDarkMode, toggleTheme }) => {
                   : "rgba(207, 207, 207, 0.4)",
               }}
             >
-              <h1 className="font-bold text-xl  text-center">{name}</h1>
+              <h1 className="font-bold text-xl pt-1 text-center">{name}</h1>
               <p className=" text-center">{title}</p>
-              <p className=" text-center font-light ">{number}</p>
+              <p className=" text-center pb-1 font-light ">{number}</p>
             </div>
           </div>
         ))}

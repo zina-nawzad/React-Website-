@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Documentaries from "./components/Documentaries";
+import DocumenterisFilter from "./Pages/documenterisFilter";
 import Series from "./components/Series";
 import Translators from "./components/Translators";
 import Footer from "./components/Footer";
@@ -20,7 +21,6 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      {/* Navbar is outside Routes to show on all pages */}
       <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <Routes>
         <Route
@@ -35,8 +35,13 @@ const App = () => {
           }
         />
         <Route
-          path="/documentaries"
+          path="/documentaries/:id"
           element={<Documentaries isDarkMode={isDarkMode} />}
+        />
+
+        <Route
+          path="/DocumenterisFilter"
+          element={<DocumenterisFilter isDarkMode={isDarkMode} />}
         />
         <Route path="/series" element={<Series isDarkMode={isDarkMode} />} />
         <Route
