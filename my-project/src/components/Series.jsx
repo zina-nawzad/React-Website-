@@ -3,8 +3,6 @@ import Image1 from "../assets/images/image1.webp";
 import Image2 from "../assets/images/image2.webp";
 import Image3 from "../assets/images/Image3.jpeg";
 import Image4 from "../assets/images/Image4.jpeg";
-import Image5 from "../assets/images/birds.jpg";
-import Image6 from "../assets/images/image6.webp";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { IoEyeOutline } from "react-icons/io5";
 
