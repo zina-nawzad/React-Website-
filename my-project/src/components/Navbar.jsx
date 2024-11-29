@@ -27,7 +27,7 @@ const NavLinks = [
   {
     id: 3,
     name: "زنجیرەکان",
-    link: "/series",
+    link: "/SeriesFilter",
     submenu: [
       { id: 6, name: "ژیانی دەریاییەکان", imgSrc: SeaAnimals, link: "#" },
       { id: 7, name: "ژیانی ئاژەڵە کێوییەکان", imgSrc: Image2, link: "#" },

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Documentaries from "./components/Documentaries";
 import DocumenterisFilter from "./Pages/documenterisFilter";
+import SeriesFilter from "./Pages/SeriesFilter";
 import Series from "./components/Series";
 import Translators from "./components/Translators";
 import Footer from "./components/Footer";
@@ -43,7 +44,11 @@ const App = () => {
           path="/DocumenterisFilter"
           element={<DocumenterisFilter isDarkMode={isDarkMode} />}
         />
-        <Route path="/series" element={<Series isDarkMode={isDarkMode} />} />
+        <Route path="/Series" element={<Series isDarkMode={isDarkMode} />} />
+        <Route
+          path="/SeriesFilter"
+          element={<SeriesFilter isDarkMode={isDarkMode} />}
+        />
         <Route
           path="/translators"
           element={<Translators isDarkMode={isDarkMode} />}

@@ -11,22 +11,6 @@ import Horse from "../assets/images/Horse.jpeg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 const DocLists = [
-  { id: 1, name: "ژیانی ئاژەڵە کێوییەکان", img: Image1, link: "#" },
-  { id: 2, name: "ژیانی ئاژەڵە کێوییەکان", img: Image2, link: "#" },
-  { id: 3, name: "ژیانی ئاژەڵە کێوییەکان", img: Image3, link: "#" },
-  { id: 4, name: "ژیانی ئاژەڵە کێوییەکان", img: Image4, link: "#" },
-  { id: 5, name: "ژیانی ئاژەڵە کێوییەکان", img: Image5, link: "#" },
-  { id: 6, name: "ژیانی ئاژەڵە کێوییەکان", img: Image6, link: "#" },
-  { id: 7, name: "ژیانی ئاژەڵە کێوییەکان", img: Image4, link: "#" },
-  { id: 8, name: "ژیانی ئاژەڵە کێوییەکان", img: Image3, link: "#" },
-  { id: 9, name: "ژیانی دەریاییەکان", img: SeaAnimals, link: "#" },
-  { id: 10, name: "ژیانی ئەسپەکان", img: Horse, link: "#" },
-  { id: 11, name: "ژیانی ئاژەڵە کێوییەکان", img: Image2, link: "#" },
-  { id: 12, name: "ژیانی ئاژەڵە کێوییەکان", img: Image1, link: "#" },
-  { id: 13, name: "ژیانی دەریاییەکان", img: SeaAnimals, link: "#" },
-  { id: 14, name: "ژیانی ئەسپەکان", img: Horse, link: "#" },
-  { id: 15, name: "ژیانی ئاژەڵە کێوییەکان", img: Image3, link: "#" },
-  { id: 16, name: "ژیانی ئاژەڵە کێوییەکان", img: Image5, link: "#" },
   { id: 17, name: "ژیانی دەریاییەکان", img: SeaAnimals, link: "#" },
   { id: 18, name: "ژیانی ئاژەڵە کێوییەکان", img: Image1, link: "#" },
   { id: 19, name: "ژیانی ئاژەڵە کێوییەکان", img: Image2, link: "#" },
@@ -54,7 +38,7 @@ const DocLists = [
 const DocFilter = [
   {
     id: 1,
-    name: "جۆری دۆکیۆمێنتاری",
+    name: "جۆری زنجیرەکان",
     dropdown: [
       { id: 1, name: "ژیانی ئاژەڵە کێوییەکان", link: "#" },
       { id: 2, name: "ژیانی ئەسپەکان", link: "#" },
@@ -66,7 +50,7 @@ const DocFilter = [
   },
 ];
 
-const DocumenterisFilter = ({ isDarkMode }) => {
+const SeriesFilter = ({ isDarkMode }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const toggleDropdown = (id) => {
     setOpenDropdown(openDropdown === id ? null : id);
@@ -103,7 +87,7 @@ const DocumenterisFilter = ({ isDarkMode }) => {
         {/* Header */}
         <div className="flex items-center gap-2 mt-10">
           <div className="pl-2 md:pl-8">
-            <h1 className="font-bold text-xl md:text-2xl">دۆکیۆمێنتارییەکان</h1>
+            <h1 className="font-bold text-xl md:text-2xl">زنجیرەکان</h1>
           </div>
           <div className={`flex justify-between items-center relative`}>
             {DocFilter.map(({ id, name, dropdown }) => (
@@ -238,4 +222,4 @@ const DocumenterisFilter = ({ isDarkMode }) => {
   );
 };
 
-export default DocumenterisFilter;
+export default SeriesFilter;
