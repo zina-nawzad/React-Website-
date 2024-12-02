@@ -20,7 +20,7 @@ const Footer = ({ isDarkMode }) => {
           src={isDarkMode ? logo_dark_mode : logo_light_mode}
           className="h-24 w-40"
         />
-        <h1 className="font-light text-center md:text-start">
+        <h1 className="font-medium text-center md:text-start">
           کوردوس یەکەمین ماڵپەڕەی تایبەتە بە فیلمی دۆکیۆمێنتاری بە ژێرنووسی
           کوردی، هەواڵ و تێڕوانین بۆ ژیانی ئاژەڵان و فیلمی دیکۆمێنتاری پێشکەش
           دەکات

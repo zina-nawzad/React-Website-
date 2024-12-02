@@ -17,10 +17,10 @@ const DocLists = [
     link: "./src/Pages/documenterisFilter.jsx",
   },
 
-  { id: 6, name: "ژیانی ئاژەڵە کێوییەکان", img: Image4, link: "#" },
-  { id: 8, name: "ژیانی ئاژەڵە کێوییەکان", img: Image3, link: "#" },
-  { id: 9, name: "ژیانی دەریاییەکان", img: SeaAnimals, link: "#" },
-  { id: 10, name: "ژیانی ئەسپەکان", img: Horse, link: "#" },
+  { id: 2, name: "ژیانی ئاژەڵە کێوییەکان", img: Image4, link: "#" },
+  { id: 3, name: "ژیانی ئاژەڵە کێوییەکان", img: Image3, link: "#" },
+  { id: 4, name: "ژیانی دەریاییەکان", img: SeaAnimals, link: "#" },
+  { id: 5, name: "ژیانی ئەسپەکان", img: Horse, link: "#" },
 ];
 
 const Series = ({ isDarkMode }) => {
@@ -41,11 +41,8 @@ const Series = ({ isDarkMode }) => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 w-full">
           {DocLists.map(({ id, name, img, link }) => (
-            <Link to={link}>
-              <div
-                key={id}
-                className="group relative h-[300px] md:h-[400px] cursor-pointer overflow-hidden flex justify-center items-center rounded-md w-full"
-              >
+            <Link to={link} key={id}>
+              <div className="group relative h-[300px] md:h-[400px] cursor-pointer overflow-hidden flex justify-center items-center rounded-md w-full">
                 <div>
                   <img
                     src={img}

@@ -47,11 +47,8 @@ const Documentaries = ({ isDarkMode }) => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 w-full">
           {DocLists.map(({ id, name, img, link }) => (
-            <Link to={link}>
-              <div
-                key={id}
-                className="group relative h-[300px] md:h-[400px] cursor-pointer overflow-hidden flex justify-center items-center rounded-md w-full"
-              >
+            <Link to={link} key={id}>
+              <div className="group relative h-[300px] md:h-[400px] cursor-pointer overflow-hidden flex justify-center items-center rounded-md w-full">
                 <div>
                   <img
                     src={img}

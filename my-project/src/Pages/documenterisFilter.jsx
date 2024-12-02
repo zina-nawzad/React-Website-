@@ -11,9 +11,19 @@ import Horse from "../assets/images/Horse.jpeg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 const DocLists = [
-  { id: 1, name: "ژیانی ئاژەڵە کێوییەکان", img: Image1, link: "#" },
+  {
+    id: 1,
+    name: "ژیانی ئاژەڵە کێوییەکان",
+    img: Image1,
+    link: "#",
+  },
   { id: 2, name: "ژیانی ئاژەڵە کێوییەکان", img: Image2, link: "#" },
-  { id: 3, name: "ژیانی ئاژەڵە کێوییەکان", img: Image3, link: "#" },
+  {
+    id: 3,
+    name: "ژیانی ئاژەڵە کێوییەکان",
+    img: Image3,
+    link: "/DocDescription",
+  },
   { id: 4, name: "ژیانی ئاژەڵە کێوییەکان", img: Image4, link: "#" },
   { id: 5, name: "ژیانی ئاژەڵە کێوییەکان", img: Image5, link: "#" },
   { id: 6, name: "ژیانی ئاژەڵە کێوییەکان", img: Image6, link: "#" },

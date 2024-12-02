@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Image1 from "../assets/images/team-1.jpg";
 import Image2 from "../assets/images/team-2.jpg";
 import Image3 from "../assets/images/team-3.jpg";
 import Image4 from "../assets/images/team-4.jpg";
-
 const translatorsList = [
   {
     id: 1,
@@ -11,7 +12,7 @@ const translatorsList = [
     title: "بەرهەمە وەرگێڕدراوەکانی",
     img: Image1,
     number: 25,
-    link: "/TranslatorPage",
+    link: "/TranslatorDescription",
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const translatorsList = [
     title: "بەرهەمە وەرگێڕدراوەکانی",
     img: Image2,
     number: 25,
-    link: "#",
+    link: "/",
   },
   {
     id: 3,
@@ -27,7 +28,7 @@ const translatorsList = [
     title: "بەرهەمە وەرگێڕدراوەکانی",
     img: Image3,
     number: 25,
-    link: "#",
+    link: "/",
   },
   {
     id: 4,
@@ -35,10 +36,90 @@ const translatorsList = [
     title: "بەرهەمە وەرگێڕدراوەکانی",
     img: Image4,
     number: 25,
-    link: "#",
+    link: "/",
   },
   {
     id: 5,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image1,
+    number: 25,
+    link: "/",
+  },
+  {
+    id: 6,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image1,
+    number: 25,
+    link: "/",
+  },
+  {
+    id: 7,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image2,
+    number: 25,
+    link: "#",
+  },
+  {
+    id: 8,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image3,
+    number: 25,
+    link: "#",
+  },
+  {
+    id: 9,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image4,
+    number: 25,
+    link: "#",
+  },
+  {
+    id: 10,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image1,
+    number: 25,
+    link: "#",
+  },
+  {
+    id: 11,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image1,
+    number: 25,
+    link: "#",
+  },
+  {
+    id: 12,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image2,
+    number: 25,
+    link: "#",
+  },
+  {
+    id: 13,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image3,
+    number: 25,
+    link: "#",
+  },
+  {
+    id: 14,
+    name: "ناوی وەرگێڕ",
+    title: "بەرهەمە وەرگێڕدراوەکانی",
+    img: Image4,
+    number: 25,
+    link: "#",
+  },
+  {
+    id: 15,
     name: "ناوی وەرگێڕ",
     title: "بەرهەمە وەرگێڕدراوەکانی",
     img: Image1,
@@ -47,14 +128,14 @@ const translatorsList = [
   },
 ];
 
-const Translators = ({ isDarkMode }) => {
+const TranslatorsPages = ({ isDarkMode }) => {
   return (
     <section
-      className={`flex flex-col justify-around items-start px-2 md:px-8  ${
+      className={`flex flex-col justify-around items-start px-2 md:px-8 pt-20 ${
         isDarkMode ? "bg-dark-primary" : "bg-light-primary"
       }`}
     >
-      <div className="flex flex-col justify-start items-center mt-24">
+      <div className="flex flex-col justify-start items-center mt-14">
         <div>
           <h1
             className={`uppercase ${
@@ -68,10 +149,10 @@ const Translators = ({ isDarkMode }) => {
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 2xl:grid-cols-5 w-full mb-24">
         {translatorsList.map(({ id, name, title, img, number, link }) => (
-          <div
+          <Link
             key={id}
-            href={link}
-            className="group p-2  h-[400px] relative cursor-pointer overflow-hidden flex justify-center rounded-md mt-8 w-full"
+            to={link}
+            className="group p-2 h-[400px] relative cursor-pointer overflow-hidden flex justify-center rounded-md mt-8 w-full"
           >
             <img
               src={img}
@@ -93,11 +174,11 @@ const Translators = ({ isDarkMode }) => {
               <p className=" text-center">{title}</p>
               <p className=" text-center pb-1 font-light ">{number}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
   );
 };
 
-export default Translators;
+export default TranslatorsPages;

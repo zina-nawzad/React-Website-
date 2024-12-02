@@ -7,6 +7,9 @@ import DocumenterisFilter from "./Pages/documenterisFilter";
 import SeriesFilter from "./Pages/SeriesFilter";
 import Series from "./components/Series";
 import Translators from "./components/Translators";
+import TranslatorsPages from "./Pages/TranslatorsPages";
+import TranslatorDescription from "./Pages/TranslatorDescription";
+import DocDescription from "./Pages/DocDescription";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -52,6 +55,18 @@ const App = () => {
         <Route
           path="/translators"
           element={<Translators isDarkMode={isDarkMode} />}
+        />
+        <Route
+          path="/TranslatorsPages"
+          element={<TranslatorsPages isDarkMode={isDarkMode} />}
+        />
+        <Route
+          path="/TranslatorDescription"
+          element={<TranslatorDescription isDarkMode={isDarkMode} />}
+        />
+        <Route
+          path="/DocDescription"
+          element={<DocDescription isDarkMode={isDarkMode} />}
         />
       </Routes>
       <Footer isDarkMode={isDarkMode} toggleTheme={toggleTheme} />

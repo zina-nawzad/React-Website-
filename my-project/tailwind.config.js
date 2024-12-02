@@ -27,7 +27,7 @@ export default {
         '5xl': '3.052rem',
       },
       fontFamily: {
-        rabar: ['Rabar_022', 'sans-serif'],
+        Rabar: ['Rabar', 'sans-serif'],
       },
       container: {
         center: true,
